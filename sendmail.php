@@ -11,7 +11,7 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('support@homaider.com', 'Новое обращение');
+	$mail->setFrom('support@homaider.com', 'Технологический институт легкой промышленности');
 	//Кому отправить
 	$mail->addAddress('aovsyannikov@ventasglobe.com');
 	//Тема письма
@@ -20,7 +20,7 @@
 
 
 	//Тело письма
-	$body = '<h1>Обращение</h1>';
+	$body = '<h1>Заявка</h1>';
 	
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
